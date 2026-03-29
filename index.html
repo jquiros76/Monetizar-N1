@@ -46,9 +46,9 @@ box-sizing: border-box; margin: 0; padding: 0;
 html { scroll-behavior: smooth; }
 
 body {
-font-family: var(–sans);
-background-color: var(–bg);
-color: var(–txt);
+font-family: -apple-system, BlinkMacSystemFont, ‘Segoe UI’, system-ui, ‘Helvetica Neue’, Arial, sans-serif;
+background-color: #0a0a0d
+color: #eeeef5
 min-height: 100vh;
 line-height: 1.6;
 overflow-x: hidden;
@@ -63,7 +63,7 @@ inset: 0;
 pointer-events: none;
 z-index: 0;
 background:
-radial-gradient(ellipse 70% 50% at 15% 10%, rgba(16,185,129,.07) 0%, transparent 60%),
+radial-gradient(ellipse 70% 50% at 15% 10%, rgba(16,185,129,.07) 0%, transparent 60%);
 radial-gradient(ellipse 50% 40% at 85% 90%, rgba(240,165,0,.05) 0%, transparent 55%);
 }
 
@@ -86,7 +86,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 padding: 20px 0;
-border-bottom: 1px solid var(–brd);
+border-bottom: 1px solid #252532
 margin-bottom: 60px;
 }
 
@@ -100,7 +100,7 @@ text-decoration: none;
 .navbar-logo {
 width: 32px;
 height: 32px;
-background: var(–accent);
+background: #10b981
 border-radius: 8px;
 display: flex;
 align-items: center;
@@ -112,7 +112,7 @@ box-shadow: 0 0 14px var(–accent-glow);
 .navbar-name {
 font-size: 14px;
 font-weight: 700;
-color: var(–txt);
+color: #eeeef5
 letter-spacing: -.2px;
 }
 
@@ -120,12 +120,12 @@ letter-spacing: -.2px;
 display: flex;
 align-items: center;
 gap: 6px;
-background: var(–accent-lt);
+background: rgba(16,185,129,.12);
 border: 1px solid rgba(16,185,129,.25);
-color: var(–accent);
+color: #10b981
 font-size: 11px;
 font-weight: 700;
-font-family: var(–mono);
+font-family: ui-monospace, ‘Cascadia Code’, ‘SF Mono’, Menlo, Consolas, monospace;
 letter-spacing: 1px;
 text-transform: uppercase;
 padding: 5px 12px;
@@ -136,14 +136,14 @@ border-radius: 99px;
 width: 6px;
 height: 6px;
 border-radius: 50%;
-background: var(–accent);
-box-shadow: 0 0 8px var(–accent);
+background: #10b981
+box-shadow: 0 0 8px #10b981
 animation: blink-dot 2s ease-in-out infinite;
 }
 
 @keyframes blink-dot {
-0%,100% { opacity: 1; box-shadow: 0 0 6px var(–accent); }
-50%      { opacity: .5; box-shadow: 0 0 12px var(–accent); }
+0%,100% { opacity: 1; box-shadow: 0 0 6px #10b981 }
+50%      { opacity: .5; box-shadow: 0 0 12px #10b981 }
 }
 
 /* ═══════════════════════════════════
@@ -157,19 +157,19 @@ padding: 10px 0 64px;
 display: inline-flex;
 align-items: center;
 gap: 8px;
-font-family: var(–mono);
+font-family: ui-monospace, ‘Cascadia Code’, ‘SF Mono’, Menlo, Consolas, monospace;
 font-size: 11px;
 font-weight: 600;
 letter-spacing: 1.5px;
 text-transform: uppercase;
-color: var(–accent);
+color: #10b981
 margin-bottom: 24px;
 }
 
 .hero-kicker-line {
 width: 28px;
 height: 1px;
-background: var(–accent);
+background: #10b981
 opacity: .6;
 }
 
@@ -178,12 +178,12 @@ font-size: clamp(2.4rem, 6vw, 3.8rem);
 font-weight: 800;
 line-height: 1.07;
 letter-spacing: -1.5px;
-color: var(–txt);
+color: #eeeef5
 margin-bottom: 22px;
 }
 
 .hero-headline-em {
-color: var(–accent);
+color: #10b981
 }
 
 .hero-body {
@@ -227,13 +227,13 @@ display: inline-flex;
 align-items: center;
 gap: 8px;
 padding: 14px 28px;
-background: var(–accent);
+background: #10b981
 color: #fff;
-font-family: var(–sans);
+font-family: -apple-system, BlinkMacSystemFont, ‘Segoe UI’, system-ui, ‘Helvetica Neue’, Arial, sans-serif;
 font-size: 15px;
 font-weight: 700;
 border: none;
-border-radius: var(–r-lg);
+border-radius: 18px;
 cursor: pointer;
 box-shadow: 0 5px 0 var(–accent-d), 0 8px 24px var(–accent-glow);
 transition: filter .15s, transform .12s, box-shadow .12s;
@@ -269,7 +269,7 @@ margin-bottom: 60px;
 }
 
 .section-label {
-font-family: var(–mono);
+font-family: ui-monospace, ‘Cascadia Code’, ‘SF Mono’, Menlo, Consolas, monospace;
 font-size: 10px;
 font-weight: 700;
 letter-spacing: 2px;
@@ -291,7 +291,7 @@ top: 18px;
 left: 18px;
 right: 18px;
 height: 1px;
-background: var(–brd2);
+background: #32324a
 z-index: 0;
 }
 
@@ -312,27 +312,27 @@ border-radius: 50%;
 display: flex;
 align-items: center;
 justify-content: center;
-font-family: var(–mono);
+font-family: ui-monospace, ‘Cascadia Code’, ‘SF Mono’, Menlo, Consolas, monospace;
 font-size: 12px;
 font-weight: 700;
-border: 1px solid var(–brd2);
-background: var(–s2);
+border: 1px solid #32324a
+background: #18181f
 color: var(–txt3);
 transition: all .3s ease;
 cursor: pointer;
 }
 
 .step-circle.step-active {
-background: var(–accent);
-border-color: var(–accent);
+background: #10b981
+border-color: #10b981
 color: #fff;
 box-shadow: 0 0 18px var(–accent-glow);
 }
 
 .step-circle.step-done {
-background: var(–accent-lt);
+background: rgba(16,185,129,.12);
 border-color: rgba(16,185,129,.4);
-color: var(–accent);
+color: #10b981
 }
 
 .step-label {
@@ -345,7 +345,7 @@ max-width: 80px;
 transition: color .3s;
 }
 
-.step-label.step-label-active { color: var(–accent); }
+.step-label.step-label-active { color: #10b981 }
 .step-label.step-label-done   { color: var(–txt2); }
 
 /* ═══════════════════════════════════
@@ -369,9 +369,9 @@ to   { opacity: 1; transform: translateY(0); }
 display: flex;
 align-items: flex-start;
 gap: 18px;
-background: var(–s1);
-border: 1px solid var(–brd);
-border-radius: var(–r-xl);
+background: #111116
+border: 1px solid #252532
+border-radius: 24px;
 padding: 28px 28px 24px;
 margin-bottom: 22px;
 position: relative;
@@ -384,7 +384,7 @@ content: ‘’;
 position: absolute;
 left: 0; top: 0; bottom: 0;
 width: 3px;
-background: var(–accent);
+background: #10b981
 box-shadow: 2px 0 14px var(–accent-glow);
 }
 
@@ -401,8 +401,8 @@ pointer-events: none;
 .lesson-icon {
 width: 52px;
 height: 52px;
-border-radius: var(–r-lg);
-background: var(–accent-lt);
+border-radius: 18px;
+background: rgba(16,185,129,.12);
 border: 1px solid rgba(16,185,129,.25);
 display: flex;
 align-items: center;
@@ -414,12 +414,12 @@ flex-shrink: 0;
 .lesson-header-text { flex: 1; position: relative; z-index: 1; }
 
 .lesson-num {
-font-family: var(–mono);
+font-family: ui-monospace, ‘Cascadia Code’, ‘SF Mono’, Menlo, Consolas, monospace;
 font-size: 10px;
 font-weight: 700;
 letter-spacing: 1.5px;
 text-transform: uppercase;
-color: var(–accent);
+color: #10b981
 margin-bottom: 6px;
 }
 
@@ -427,7 +427,7 @@ margin-bottom: 6px;
 font-size: 1.65rem;
 font-weight: 800;
 letter-spacing: -.4px;
-color: var(–txt);
+color: #eeeef5
 line-height: 1.2;
 margin-bottom: 8px;
 }
@@ -442,7 +442,7 @@ line-height: 1.6;
 display: flex;
 align-items: center;
 gap: 6px;
-font-family: var(–mono);
+font-family: ui-monospace, ‘Cascadia Code’, ‘SF Mono’, Menlo, Consolas, monospace;
 font-size: 11px;
 color: var(–txt3);
 flex-shrink: 0;
@@ -458,9 +458,9 @@ margin-bottom: 28px;
 
 /* Bloque de texto */
 .content-block {
-background: var(–s1);
-border: 1px solid var(–brd);
-border-radius: var(–r-lg);
+background: #111116
+border: 1px solid #252532
+border-radius: 18px;
 padding: 26px 26px 22px;
 box-shadow: 0 2px 10px rgba(0,0,0,.2);
 }
@@ -468,7 +468,7 @@ box-shadow: 0 2px 10px rgba(0,0,0,.2);
 .content-block-title {
 font-size: 15px;
 font-weight: 700;
-color: var(–txt);
+color: #eeeef5
 margin-bottom: 12px;
 display: flex;
 align-items: center;
@@ -486,7 +486,7 @@ line-height: 1.8;
 }
 
 .content-block-text strong {
-color: var(–txt);
+color: #eeeef5
 font-weight: 600;
 }
 
@@ -512,27 +512,27 @@ line-height: 1.55;
 width: 20px;
 height: 20px;
 border-radius: 50%;
-background: var(–accent-lt);
+background: rgba(16,185,129,.12);
 border: 1px solid rgba(16,185,129,.3);
 display: flex;
 align-items: center;
 justify-content: center;
 font-size: 10px;
-color: var(–accent);
+color: #10b981
 flex-shrink: 0;
 margin-top: 1px;
 }
 
 .check-list-text strong {
-color: var(–txt);
+color: #eeeef5
 font-weight: 600;
 }
 
 /* Bloque de quote / insight */
 .insight-block {
-background: var(–accent-lt);
+background: rgba(16,185,129,.12);
 border: 1px solid rgba(16,185,129,.25);
-border-radius: var(–r-lg);
+border-radius: 18px;
 padding: 22px 24px;
 display: flex;
 gap: 16px;
@@ -553,7 +553,7 @@ font-style: italic;
 }
 
 .insight-text strong {
-color: var(–accent);
+color: #10b981
 font-style: normal;
 font-weight: 700;
 }
@@ -562,7 +562,7 @@ font-weight: 700;
 .warning-block {
 background: rgba(240,165,0,.08);
 border: 1px solid rgba(240,165,0,.2);
-border-radius: var(–r-lg);
+border-radius: 18px;
 padding: 20px 22px;
 display: flex;
 gap: 14px;
@@ -578,7 +578,7 @@ line-height: 1.7;
 }
 
 .warning-text strong {
-color: var(–gold);
+color: #f0a500
 font-weight: 700;
 }
 
@@ -591,32 +591,32 @@ margin-top: 14px;
 }
 
 .compare-col {
-background: var(–s2);
-border: 1px solid var(–brd);
-border-radius: var(–r);
+background: #18181f
+border: 1px solid #252532
+border-radius: 10px;
 padding: 16px;
 }
 
 .compare-col-bad  { border-top: 2px solid rgba(244,63,94,.5); }
-.compare-col-good { border-top: 2px solid var(–accent); }
+.compare-col-good { border-top: 2px solid #10b981 }
 
 .compare-col-title {
 font-size: 11px;
 font-weight: 700;
 letter-spacing: .5px;
 text-transform: uppercase;
-font-family: var(–mono);
+font-family: ui-monospace, ‘Cascadia Code’, ‘SF Mono’, Menlo, Consolas, monospace;
 margin-bottom: 10px;
 }
 
 .compare-col-bad  .compare-col-title { color: #f43f5e; }
-.compare-col-good .compare-col-title { color: var(–accent); }
+.compare-col-good .compare-col-title { color: #10b981 }
 
 .compare-item {
 font-size: 12px;
 color: var(–txt2);
 padding: 5px 0;
-border-bottom: 1px solid var(–brd);
+border-bottom: 1px solid #252532
 line-height: 1.4;
 }
 
@@ -624,9 +624,9 @@ line-height: 1.4;
 
 /* Ejercicio / tarea */
 .exercise-block {
-background: var(–s2);
-border: 1px solid var(–brd2);
-border-radius: var(–r-lg);
+background: #18181f
+border: 1px solid #32324a
+border-radius: 18px;
 padding: 24px 24px 20px;
 box-shadow: 0 2px 10px rgba(0,0,0,.2);
 }
@@ -639,22 +639,22 @@ margin-bottom: 16px;
 }
 
 .exercise-badge {
-font-family: var(–mono);
+font-family: ui-monospace, ‘Cascadia Code’, ‘SF Mono’, Menlo, Consolas, monospace;
 font-size: 10px;
 font-weight: 700;
 letter-spacing: 1px;
 text-transform: uppercase;
 padding: 4px 10px;
 border-radius: 5px;
-background: var(–gold-lt);
-color: var(–gold);
+background: rgba(240,165,0,.1);
+color: #f0a500
 border: 1px solid rgba(240,165,0,.25);
 }
 
 .exercise-title {
 font-size: 15px;
 font-weight: 700;
-color: var(–txt);
+color: #eeeef5
 }
 
 .exercise-instruction {
@@ -684,19 +684,19 @@ line-height: 1.55;
 width: 24px;
 height: 24px;
 border-radius: 6px;
-background: var(–s3);
-border: 1px solid var(–brd2);
+background: #1f1f28
+border: 1px solid #32324a
 display: flex;
 align-items: center;
 justify-content: center;
-font-family: var(–mono);
+font-family: ui-monospace, ‘Cascadia Code’, ‘SF Mono’, Menlo, Consolas, monospace;
 font-size: 11px;
 font-weight: 700;
-color: var(–gold);
+color: #f0a500
 flex-shrink: 0;
 }
 
-.exercise-step-text strong { color: var(–txt); font-weight: 600; }
+.exercise-step-text strong { color: #eeeef5 font-weight: 600; }
 
 /* ═══════════════════════════════════
 NAVEGACIÓN ENTRE LECCIONES
@@ -714,18 +714,18 @@ display: inline-flex;
 align-items: center;
 gap: 8px;
 padding: 12px 22px;
-border-radius: var(–r-lg);
-border: 1.5px solid var(–brd2);
+border-radius: 18px;
+border: 1.5px solid #32324a
 background: transparent;
 color: var(–txt2);
-font-family: var(–sans);
+font-family: -apple-system, BlinkMacSystemFont, ‘Segoe UI’, system-ui, ‘Helvetica Neue’, Arial, sans-serif;
 font-size: 14px;
 font-weight: 600;
 cursor: pointer;
 transition: border-color .15s, color .15s, background .15s;
 }
 
-.btn-lesson-nav:hover { border-color: var(–brd2); color: var(–txt); background: var(–s2); }
+.btn-lesson-nav:hover { border-color: #32324a color: #eeeef5 background: #18181f }
 .btn-lesson-nav:disabled { opacity: .3; cursor: default; }
 
 .btn-lesson-next {
@@ -733,11 +733,11 @@ display: inline-flex;
 align-items: center;
 gap: 8px;
 padding: 12px 26px;
-border-radius: var(–r-lg);
+border-radius: 18px;
 border: none;
-background: var(–accent);
+background: #10b981
 color: #fff;
-font-family: var(–sans);
+font-family: -apple-system, BlinkMacSystemFont, ‘Segoe UI’, system-ui, ‘Helvetica Neue’, Arial, sans-serif;;
 font-size: 14px;
 font-weight: 700;
 cursor: pointer;
@@ -760,7 +760,7 @@ border-radius: var(–r-lg) var(–r-lg) 60% 60%;
 .btn-lesson-next:active { transform: translateY(2px); box-shadow: 0 1px 0 var(–accent-d); }
 
 .lesson-progress-text {
-font-family: var(–mono);
+font-family: ui-monospace, ‘Cascadia Code’, ‘SF Mono’, Menlo, Consolas, monospace;
 font-size: 11px;
 color: var(–txt3);
 }
@@ -783,7 +783,7 @@ display: block;
 width: 80px;
 height: 80px;
 border-radius: 50%;
-background: var(–accent-lt);
+background: rgba(16,185,129,.12);
 border: 2px solid rgba(16,185,129,.3);
 display: flex;
 align-items: center;
@@ -804,7 +804,7 @@ to   { transform: scale(1) rotate(0); opacity: 1; }
 font-size: 2rem;
 font-weight: 800;
 letter-spacing: -.5px;
-color: var(–txt);
+color: #eeeef5
 margin-bottom: 12px;
 }
 
@@ -831,14 +831,14 @@ text-align: center;
 .completion-stat-num {
 font-size: 2rem;
 font-weight: 800;
-color: var(–accent);
+color: #10b981
 letter-spacing: -1px;
 line-height: 1;
 margin-bottom: 4px;
 }
 
 .completion-stat-lbl {
-font-family: var(–mono);
+font-family: ui-monospace, ‘Cascadia Code’, ‘SF Mono’, Menlo, Consolas, monospace;
 font-size: 10px;
 font-weight: 700;
 letter-spacing: 1px;
@@ -847,9 +847,9 @@ color: var(–txt3);
 }
 
 .completion-upgrade-box {
-background: var(–s1);
-border: 1px solid var(–brd2);
-border-radius: var(–r-xl);
+background: #111116
+border: 1px solid #32324a
+border-radius: 24px;
 padding: 32px 28px;
 max-width: 480px;
 margin: 0 auto;
@@ -867,19 +867,19 @@ background: linear-gradient(90deg, var(–accent), var(–gold));
 }
 
 .upgrade-label {
-font-family: var(–mono);
+font-family: ui-monospace, ‘Cascadia Code’, ‘SF Mono’, Menlo, Consolas, monospace;
 font-size: 10px;
 font-weight: 700;
 letter-spacing: 1.5px;
 text-transform: uppercase;
-color: var(–gold);
+color: #f0a500
 margin-bottom: 10px;
 }
 
 .upgrade-title {
 font-size: 1.3rem;
 font-weight: 800;
-color: var(–txt);
+color: #eeeef5
 letter-spacing: -.3px;
 margin-bottom: 10px;
 }
@@ -909,7 +909,7 @@ color: var(–txt2);
 }
 
 .upgrade-feature-check {
-color: var(–gold);
+color: #f0a500
 font-size: 12px;
 flex-shrink: 0;
 }
@@ -919,13 +919,13 @@ display: inline-flex;
 align-items: center;
 gap: 8px;
 padding: 14px 28px;
-background: var(–gold);
+background: #f0a500
 color: #0a0a0d;
-font-family: var(–sans);
+font-family: -apple-system, BlinkMacSystemFont, ‘Segoe UI’, system-ui, ‘Helvetica Neue’, Arial, sans-serif;
 font-size: 15px;
 font-weight: 800;
 border: none;
-border-radius: var(–r-lg);
+border-radius: 18px;
 cursor: pointer;
 box-shadow: 0 4px 0 var(–gold-d), 0 6px 20px rgba(240,165,0,.25);
 transition: filter .15s, transform .12s;
@@ -954,18 +954,18 @@ align-items: center;
 gap: 6px;
 margin-top: 12px;
 padding: 10px 20px;
-border-radius: var(–r);
-border: 1px solid var(–brd);
+border-radius: 10px;
+border: 1px solid #252532
 background: transparent;
 color: var(–txt3);
-font-family: var(–sans);
+font-family: -apple-system, BlinkMacSystemFont, ‘Segoe UI’, system-ui, ‘Helvetica Neue’, Arial, sans-serif;
 font-size: 13px;
 font-weight: 600;
 cursor: pointer;
 transition: color .15s, border-color .15s;
 }
 
-.btn-restart:hover { color: var(–txt2); border-color: var(–brd2); }
+.btn-restart:hover { color: var(–txt2); border-color: #32324a }
 
 /* ═══════════════════════════════════
 RESPONSIVE
